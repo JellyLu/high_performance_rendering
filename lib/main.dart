@@ -17,14 +17,14 @@ class MyAppState extends State<MyApp> {
   Widget get firstWidget => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Hello World'),
+          RichText(text: TextSpan(text: 'Hello World')),
           Icon(Icons.favorite, color: Colors.red),
         ],
       );
   Widget get secondWidget => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Hello Chengdu'),
+          RichText(text: TextSpan(text: 'Hello Chengdu')),
           Icon(Icons.favorite_border, color: Colors.red),
         ],
       );
