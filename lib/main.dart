@@ -17,15 +17,15 @@ class MyAppState extends State<MyApp> {
   Widget get firstWidget => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          RichText(text: TextSpan(text: 'Hello World')),
-          Icon(Icons.favorite, color: Colors.red),
+          RichText(text: TextSpan(text: 'Hello')),
+          RichText(text: TextSpan(text: 'World')),
         ],
       );
   Widget get secondWidget => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          RichText(text: TextSpan(text: 'Hello Chengdu')),
-          Icon(Icons.favorite_border, color: Colors.red),
+          RichText(text: TextSpan(text: 'Hello')),
+          RichText(text: TextSpan(text: 'Chengdu')),
         ],
       );
 
@@ -41,7 +41,7 @@ class MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _switchTree = false;
+    _switchTree = true;
   }
 
   @override
